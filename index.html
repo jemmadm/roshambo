@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Rock Paper Scissors</title>
-        <script src="roshambo.js"></script>
-    </head>
-    <body onload="changePlayer()">
-        <h1>Rock Paper Scissors</h1>
-        <p>This page has been set up so that two players can play the common game of Rock Paper Scissors (also known as ro-sham-bo). The rules are straightforward, but in case you don’t know them:</p>
-        <blockquote>
-            <p>Rock Paper Scissors is a game involving two players making pre-defined hand gestures at each other. The gesture that each player uses is played against the other, with a winner being decided based on the rules being used.</p>
-            <p>The three gestures used in base Rock Paper Scissors are... well... rock, paper, and scissors. The way these are scored is as such:</p>
-            <ul>
-                <li>Rock beats Scissors</li>
-                <li>Scissors beats Paper</li>
-                <li>Paper beats Rock</li>
-            </ul>
-            <footer><cite><a href="http://agilekatas.co.uk/katas/RockPaperScissors-Kata">Rock Paper Scissors Kata</a></cite></footer>
-        </blockquote>
-        <p>In reality, the two players would count to three and reveal their move. This page already has buttons to indicate which move the players made. We would like you to complete the game by writing some code to work out who the winner is.</p>
-        <h2>What you need to do</h2>
-        <p>There are two files in this project—this ‘index.html’ file which contains the structure of the page, and a file named ‘roshambo.js’ which contains the code that runs the game. You will need to change the JavaScript file to make sure that once both moves have been entered, the correct winner is displayed in the page.</p>
-        <p><strong id="activePlayer"></strong></p>
-        <p>
-            <button onclick="play('rock')">rock</button>
-            <button onclick="play('paper')">paper</button>
-            <button onclick="play('scissors')">scissors</button>
-        </p>
-        <p><strong id="winner"></strong></p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <script src="roshambo.js"></script>
+</head>
+<body onload="changePlayer()">
+<h1>Rock Paper Scissors</h1>
+<p>This page has been set up so that two players can play the common game of Rock Paper Scissors (also known as
+    ro-sham-bo). The rules are straightforward, but in case you don’t know them:</p>
+<blockquote>
+    <p>Rock Paper Scissors is a game involving two players making pre-defined hand gestures at each other. The gesture
+        that each player uses is played against the other, with a winner being decided based on the rules being
+        used.</p>
+    <p>The three gestures used in base Rock Paper Scissors are... well... rock, paper, and scissors. The way these are
+        scored is as such:</p>
+    <ul>
+        <li>Rock beats Scissors</li>
+        <li>Scissors beats Paper</li>
+        <li>Paper beats Rock</li>
+    </ul>
+    <footer><cite><a href="http://agilekatas.co.uk/katas/RockPaperScissors-Kata">Rock Paper Scissors Kata</a></cite>
+    </footer>
+</blockquote>
+<p>In reality, the two players would count to three and reveal their move. This page already has buttons to indicate
+    which move the players made. We would like you to complete the game by writing some code to work out who the winner
+    is.</p>
+<h2>What you need to do</h2>
+<p>There are two files in this project—this ‘index.html’ file which contains the structure of the page, and a file named
+    ‘roshambo.js’ which contains the code that runs the game. You will need to change the JavaScript file to make sure
+    that once both moves have been entered, the correct winner is displayed in the page.</p>
+<p><strong id="activePlayer"></strong></p>
+<p>
+    <button onclick="play('rock')">rock</button>
+    <button onclick="play('paper')">paper</button>
+    <button onclick="play('scissors')">scissors</button>
+    <button onclick="play('lizard')">lizard</button>
+    <button onclick="play('spock')">spock</button>
+
+</p>
+<p><strong id="winner"></strong></p>
+</body>
 </html>
